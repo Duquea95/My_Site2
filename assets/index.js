@@ -3,6 +3,27 @@ $(function(){
     $menu = $("div.button");
     $nav = $("nav");
 
+    // When the user scrolls the page, execute myFunction
+//     window.onscroll = function() {myFunction()};
+//     $('.carousel').carousel({
+//   interval: 200;
+// })
+
+    // Get the navbar
+    var navbar = document.getElementById("drop-menu");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
     /* Button Function */
     $menu.on('click',function(){
         if($menu.hasClass("change")){
@@ -17,16 +38,17 @@ $(function(){
         /* Open */
         function openNav(){
             console.log("Open Nav");
-            $($nav).css("height", "100%");
+            $nav.css("height", "100%");
             $(".bar").css("background-color", "rgb(255,255,255)");
-            $(".bar").css("opacity", "rgb(255,255,255,1)");
+            $('ul.main-nav').css("display", "block");
+            $nav.css("display", "block");
         }
     });
 
     /* Close */
     function closeNav() {
-        $($nav).css("height", "0%");
-        // $(".bar").css("background-color", "rgba(0,0,0,1)");
+        $($nav).css("height", "10%");
+        $('ul.main-nav').css("display", "none");
     }
 
 });
