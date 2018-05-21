@@ -1,5 +1,5 @@
 *{
-    font-family: "Gill Sans", sans-serif;
+    font-family: "Helvetica", Arial, sans-serif;
 }
 
 *, body, div, ul, li, p, h1, h2, h3, footer, img, input, legend, .btn-style{
@@ -188,7 +188,7 @@ footer h3{
     color: white;
     height: auto;
     font-size: 1.5em;
-    padding: 5% 5%;
+    padding: 5% 8.5%;
     position: relative;
 }
 .shift-cap{
@@ -347,7 +347,6 @@ textarea{
 .form-group{
     margin: 2%;
 }
-
 @media only screen and (max-width: 769px) {
     .main-nav{
         padding-right: 0;
@@ -494,4 +493,17 @@ textarea{
         margin-bottom: 15%;
     }
 
+}
+@media(max-width:2000px){}
+
+@media(max-width:380px){
+    div.button{
+        right: 2%;
+    }
+
+}
+@media(max-width:320px){
+    .logo-wrapper{
+        width: 90%;
+    }
 }
