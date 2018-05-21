@@ -84,9 +84,6 @@ nav li a{
     display: inline-block;
     transition: color .1s cubic-bezier(.4,0,.2,1);
 }
-.active-link{
-    /* text-decoration: underline; */
-}
 .active-link,nav li a:hover{
     color: #FFF;
 }
@@ -122,7 +119,7 @@ footer h3{
 }
 .bg{
     padding-top: 58px;
-    height: 679px;
+    /* height: 679px; */
 }
 .bg-inner{
     position: relative;
@@ -192,6 +189,7 @@ footer h3{
     height: auto;
     font-size: 1.5em;
     padding: 5% 5%;
+    position: relative;
 }
 .shift-cap{
 }
@@ -227,7 +225,7 @@ footer{
     color: rgba(0,0,0,.7);
 }
 
-.footer-menu li a:hover, .pj-name a{
+.box a{
     color:black;
 }
 .footer-menu h3{
@@ -253,6 +251,7 @@ footer{
     margin: 0 2%;
     margin-top: 7%;
     width: 15%;
+    cursor: pointer;
 }
 .media-icons:last-child{
     width: 17%;
@@ -411,17 +410,31 @@ textarea{
         color: white;
         font-size: 1.5em;
     }
-
+    .content{
+        text-align: center;
+    }
     li.nav-item a{
-        color: white;
+        /* color: white; */
         /* font-size: 3.5em; */
         text-decoration: none;
+    }
+    .active-link .nav-indicator{
+        transform: scaleY(0);
     }
     .row{
         margin: 0 auto;
     }
+    .bg{
+        padding-top: 47px;
+    }
     .bg-h1{
         margin-top: 10%;
+    }
+    .bg-h1 p{
+        font-size: 1.6em;
+    }
+    .box{
+        padding: 8% 0;
     }
     h1{
         font-size: 2.1em;
@@ -431,6 +444,13 @@ textarea{
         display: flex;
         padding-top: 5%;
     }
+    .footer-menu li h3{
+        font-size: 1.6em;
+    }
+    .footer-menu li a{
+        font-size: 1.4em;
+    }
+
     .bottom-item:nth-child(2){
         margin: 0;
         border-left: 0;
@@ -452,4 +472,26 @@ textarea{
     .resize{
         /* padding-top: 1%; */
     }
+    .active-link{
+        width: 100%;
+        /* height: 100%; */
+        color: black;
+        background-color: white;
+    }
+    .bg-text{
+        font-size: 1.4em;
+        /* text-align: left; */
+        padding: 10% 10%;
+    }
+    .resize,.resize-2{
+        height: auto;
+    }
+    .form{
+        width: 80%;
+    }
+    button{
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+
 }
