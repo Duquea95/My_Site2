@@ -122,22 +122,29 @@ footer h3{
 }
 .bg{
     padding-top: 58px;
-    /* height: 679px; */
+    height: 679px;
 }
 .bg-inner{
     position: relative;
     width: 100%;
+    height: 100%;
 }
 .resize, .resize-2{
     width: 100%;
-    height: auto;
+    height: inherit;
     /* background-color: black; */
     background-size: cover;
     padding-top: 3.5%;
+}
+.resize{
     padding-bottom: 3%;
 }
 .resize-2{
     padding-top: .6%;
+}
+.resize-3{
+    padding-top: 3.5%;
+    height: auto;
 }
 .col-lg-12{
     padding-left: 0;
@@ -146,7 +153,7 @@ footer h3{
 .row{
     margin: 0 auto;
     text-align: center;
-    /* height: 78%; */
+    height: inherit;
 }
 .bg-h1{
     /* display: block; */
@@ -162,6 +169,7 @@ footer h3{
     box-shadow: 2px 6px 2px #000000;
 }
 .bg-h1 h1{
+    margin-top: 2%;
     margin-bottom: 2%;
 }
 .bg-text{
@@ -351,11 +359,11 @@ textarea{
 .form-group{
     margin: 2%;
 }
-@media (min-width: 800px) and (max-width: 1000px) {
+/* @media (min-width: 800px) and (max-width: 900px) {
     .bg-h1{
         margin-top: 20px;
     }
-}
+} */
 @media only screen and (max-width: 769px) {
     .main-nav{
         padding-right: 0;
@@ -509,6 +517,9 @@ textarea{
     div.button{
         right: 2%;
         top: 2.5%;
+    }
+    .resize-2{
+        padding-bottom: 0;
     }
 
 }
